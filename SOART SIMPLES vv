@@ -1,0 +1,40 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+    int A , B, C;
+    
+    scanf("%d",&A);
+    
+    scanf("%d",&B);
+    
+    scanf("%d",&C);
+    
+    printf("\n");
+    
+    if(A <= B && B <= C){
+        printf("%d\n""%d\n""%d\n", A, B, C);
+    }
+    	if(A <= C && C <= B){
+        	printf("%d\n""%d\n""%d\n", A, C, B);    
+    	}
+    		if(B <= A && A <= C){
+        		printf("%d\n""%d\n""%d\n", B, A, C);
+    		}
+    			if(B <= C && C <= A){
+    				printf("%d\n""%d\n""%d\n", B, C, A);
+				}
+					if(C <= A && A <= B){
+						printf("%d\n""%d\n""%d\n", C, A, B);
+					}
+						if(C <= B && B <= A){
+							printf("%d\n""%d\n""%d\n", C, B, A);
+						}
+						
+						printf("\n");
+						
+						printf("%d\n", A);
+						printf("%d\n", B);
+						printf("%d\n", C);
+    return 0;
+}
