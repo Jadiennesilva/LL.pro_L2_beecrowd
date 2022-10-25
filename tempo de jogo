@@ -20,3 +20,24 @@ int main() {
  
     return 0;
 }
+
+
+#include <stdio.h>
+ 
+int main() {
+    
+    int vi, vf;
+ 
+  scanf("%d", &vi);
+  scanf("%d", &vf);
+  
+  if(valor_inicial < vf){
+      printf("O JOGO DUROU %d HORA(S)\n",vi - vf);
+  }
+  
+  if(!(vi < vf)){
+       printf("O JOGO DUROU %d HORA(S)\n",24-vi + vf);
+  }
+ 
+    return 0;
+}
