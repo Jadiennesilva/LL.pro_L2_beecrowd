@@ -12,23 +12,23 @@ int main() {
     
     printf("\n");
     
-    if(A <= B && B <= C){
-        printf("%d\n""%d\n""%d\n", A, B, C);
+    if(A < B && B < C){
+        printf("%d\n %d\n %d\n", A, B, C);
     }
-    	if(A <= C && C <= B){
-        	printf("%d\n""%d\n""%d\n", A, C, B);    
+    	if(A < C && C < B){
+        	printf("%d\n %d\n %d\n", A, C, B);    
     	}
-    		if(B <= A && A <= C){
-        		printf("%d\n""%d\n""%d\n", B, A, C);
+    		if(B < A && A < C){
+        		printf("%d\n %d\n %d\n", B, A, C);
     		}
-    			if(B <= C && C <= A){
-    				printf("%d\n""%d\n""%d\n", B, C, A);
+    			if(B < C && C < A){
+    				printf("%d\n %d\n %d\n", B, C, A);
 				}
-					if(C <= A && A <= B){
-						printf("%d\n""%d\n""%d\n", C, A, B);
-					}
-						if(C <= B && B <= A){
-							printf("%d\n""%d\n""%d\n", C, B, A);
+					if(C < A && A < B)
+						if(C < B && B < A){
+						printf("%d\n %d\n %d\n", C, A, B);
+					}{
+							printf("%d\n %d\n %d\n", C, B, A);
 						}
 						
 						printf("\n");
