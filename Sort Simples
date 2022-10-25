@@ -1,51 +1,40 @@
 #include <stdio.h>
-
-
-  int main(){
-      
-      int N1, N2, N3;
-      
-      scanf("%d",&N1);
-      scanf("%d",&N2);
-      scanf("%d",&N3);
-      
-      if (N2 > N1 > && N1 > N3 && N2 > N3){
-       
-       printf("%d\n",N3);
-       printf("%d\n",N2);
-       printf("%d\n",N1);
-      }
-      if(N2 > N1 > && N1 > N3 && N2 < N3){
-          
-       printf("%d\n",N2);
-       printf("%d\n",N3);
-       printf("%d\n",N1);  
-      }
-     if(N2 > N1 > && N2 > N3 && N1 < N3)
-     {
-       printf("%d\n",N3);
-       printf("%d\n",N1);
-       printf("%d\n",N2); 
-     }
-     if(N2 > N1 > && N2 > N3 && N1 < N3)
+ 
+int main() {
+ 
+    int A , B, C;
     
-    {
-       printf("%d\n",N1);
-       printf("%d\n",N3);
-       printf("%d\n",N2);  
-    }
-   if(N2 > N1 > && N2 > N3 && N1 < N3)
-    {
-       printf("%d\n",N2);
-       printf("%d\n",N1);
-       printf("%d\n",N3);    
-    }
-    if(N2 > N1 > && N2 > N3 && N1 < N3)
-      
-    printf("\n%d\n",N1);
-    printf("%d\n",N2);
-    printf("%d\n",N3);
+    scanf("%d",&A);
     
-      
-    return 0;  
-  }
+    scanf("%d",&B);
+    
+    scanf("%d",&C);
+    
+    printf("\n");
+    
+    if(A < B && B < C){
+        printf("%d\n %d\n %d\n", A, B, C);
+    }
+    	if(A < C && C < B){
+        	printf("%d\n %d\n d\n", A, C, B);    
+    	}
+    		if(B < A && A < C){
+        		printf("%d\n %d\n %d\n", B, A, C);
+    		}
+    			if(B < C && C < A){
+    				printf("%d\n %d\n %d\n", B, C, A);
+				}
+					if(C < A && A < B)
+						if(C < B && B < A){
+						printf("%d\n %d\n %d\n", C, A, B);
+					}{
+							printf("%d\n %d\n %d\n", C, B, A);
+						}
+						
+						printf("\n");
+						
+						printf("%d\n", A);
+						printf("%d\n", B);
+						printf("%d\n", C);
+    return 0;
+}
