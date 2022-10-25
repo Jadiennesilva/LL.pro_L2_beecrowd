@@ -31,7 +31,7 @@ int main() {
   scanf("%d", &vi);
   scanf("%d", &vf);
   
-  if(valor_inicial < vf){
+  if(vi < vf){
       printf("O JOGO DUROU %d HORA(S)\n",vi - vf);
   }
   
