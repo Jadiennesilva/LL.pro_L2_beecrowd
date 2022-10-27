@@ -1,45 +1,28 @@
 #include <stdio.h>
+int main(){
+  
+    float n1,n2,n3,n4,av1,media, avf;
 
- int main(){
-
-    float n1,n2,n3,n4,avf,media;
-
-    
     scanf("%f",&n1);
     scanf("%f",&n2);
     scanf("%f",&n3);
     scanf("%f",&n4);
+    
+    
+    media = (n1 * 2 + n2 * 3 + n3 * 4 + n4) / 10;
+    
 
-    media = ((n1 * 2) + (n2 * 3) + (n3 * 4) + n4) / 10;
-
-    printf("Media : %.2f .\n",media);
-
-    if(media >= 7){
-        printf("aprovado com media : %.2f",media);
-    }{
-
-        if(media >= 5){
-
-                      
-            scanf("%f",&avf);
-
-            media = (media + avf) / 2;
-
-            if(media >= 7){
-
-                printf("Aprovado com a media : %.2f .\n",media);
-            }{
-
-                printf("Aluno Reprovado.\n");
-            }
-
-        }else{
-
-            printf("Aluno Reprovado.\n");
-        }
+    printf("Media: %.1f\n", media);
+    
+    if (media >= 7.0){
+        printf("Aluno aprovado.\n");
     }
-
-
-    return(0);
- }
-
+    if (media <= 5.0){
+        printf("Aluno reprovado.\n");
+    }
+    
+    if((5 <= media) && (media < 7)){
+        printf("Aluno em exame.%.1f\n")
+    }
+       return 0;
+}
